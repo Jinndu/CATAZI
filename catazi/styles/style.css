@@ -1,0 +1,105 @@
+html, body{
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+nav ul{
+    display: flex;
+    list-style: none; 
+    margin: auto;
+}
+.navbar a{
+    text-decoration: none;
+    margin-left: 2.5rem;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.navbar a:hover{
+    color: #9ADE7B;
+}
+a i{
+    color: #9ADE7B;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.menu{
+    position: absolute;
+    right: 1.5rem;
+}
+.menu:hover{
+    cursor: pointer;
+}
+.logo{
+    position: absolute;
+    padding: 5rem;
+    background-color: #9ADE7B;
+    top: -2rem;
+    left: 1px;
+    color: white;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    font-weight: 700;
+    z-index: 1;
+    font-size: 20px;
+}
+
+.carousel-img{
+    width: 98%;
+    margin: auto;
+}
+.carousel-img img{
+    height: 27rem;
+}
+
+.motion{
+    background-color: #9ADE7B;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.attributes{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.at{
+    flex-basis: 25%;
+    height: 20rem;
+    text-align: center;
+    padding: auto;
+}
+.at h2{
+    color: #9ADE7B;
+    /* font-weight: 800; */
+    font-size: 20px;
+}
+.at p{
+    font-size: 14px;
+    line-height: 2;
+    color: rgba(86, 88, 114, 1);
+    font-weight: 600;
+}
+.at i{
+    margin-right: 5px;
+}
+.at2{
+    order: 3;
+}
+.at3{
+    margin-top: 1rem;
+}
