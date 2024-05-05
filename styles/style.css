@@ -142,7 +142,7 @@ a i{
     margin-top: 2rem;
     color: rgb(37, 37, 37);
     font-weight: 800;
-    letter-spacing: 2px;
+    letter-spacing: px;
 }
 .fa-forward{
     color: #9ADE7B;
@@ -216,7 +216,7 @@ form{
 
 .footer{
     background-color: black;
-    padding: 2rem;
+    padding: 1rem;
 }
 .footer ul{
     display: flex;
