@@ -38,7 +38,7 @@ html, body{
       color:#9ADE7B;
   }
   a i{
-      color: #9ADE7B;
+      color: white;
       font-size: 16px;
       margin-right: 5px;
   }
@@ -74,11 +74,55 @@ html, body{
     height: 30rem;
     display: flex;
   }
-  .header1{
+  .header{
     width: 100%;
-    height: 10rem;
+    height: 20rem;
   }
-  .headerimg img{
+  .header-img img{
     width: 100%;
-    height: 15rem;
+    height: 18rem;
+    
   }
+
+  .content{
+    display: flex;
+    margin-top: 1rem;
+  }
+  .service{
+    flex-basis: 60%;
+    /* border: 1px solid; */
+    padding: 1rem;
+  }
+  .sidebar{
+    flex-basis: 30%;
+    /* border: 1px solid; */
+  }
+
+.topic{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    height: 50rem;
+    padding-left: 3rem;
+}
+
+.topic h1{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    margin-bottom: .5rem;
+    letter-spacing: 2px;
+}
+
+.topic img{
+    width: 100%;
+    height: 20rem;
+    align-self: center;
+    margin-bottom: 2rem;
+}
+
+.topic p {
+    margin-bottom: 2rem;
+}
