@@ -50,7 +50,7 @@ a i{
 }
 .logo{
     position: absolute;
-    padding: 5rem;
+    padding: 2rem;
     background-color: #9ADE7B;
     top: -2rem;
     left: 1px;
@@ -126,6 +126,7 @@ a i{
     background-position: center;
     background-repeat: none;
     background-size: cover;
+    font-size: 1rem;
 }
 .why1{
     flex-basis: 40%;
@@ -143,6 +144,7 @@ a i{
     color: rgb(37, 37, 37);
     font-weight: 800;
     letter-spacing: px;
+    font-size: 2rem;
 }
 .fa-forward{
     color: #9ADE7B;
@@ -170,6 +172,7 @@ a i{
     display: flex;
     flex-direction: column;
     padding: 2rem 0 0 6rem;
+    position: relative;
 }
 
 
@@ -188,8 +191,9 @@ a i{
 }
 form{
     display: flex;
+    flex-direction: column;
 }
-.form input{
+.form input, .form select{
     background-color: black;
     height: 3.3rem;
     color: white;
@@ -199,6 +203,9 @@ form{
     outline: none;
     border: none;
     border-radius: 8px;
+}
+.form select, select option{
+    cursor: pointer;
 }
 .form textarea{
     border: none;
@@ -214,6 +221,39 @@ form{
     margin: 0;
 }
 
+.form button{
+    background-color: #9ADE7B;
+    width: 30%;
+    padding: 1rem 4rem;
+    border-radius: 12px;
+    border:none;
+    outline: none;
+    box-shadow: -12px 12px 12px #3e4a39;
+    color: white;
+    font-weight: 700;
+    transition: .5s ease-in-out;
+    position: relative;
+}
+.form button:hover{
+    background-color: black;
+    box-shadow: -12px 12px 12px #323232;
+
+}
+.form button[note]::after{
+    content: attr(note);
+    display: flex;
+    opacity: 0;
+    position: absolute;
+    background-color: transparent;
+    bottom: px;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: 1s;
+}
+.form button:hover::after{
+    opacity: 1;
+    transform: translateX(150px);
+}
 .footer{
     background-color: black;
     padding: 1rem;
@@ -221,4 +261,14 @@ form{
 .footer ul{
     display: flex;
     list-style: none;
+}
+
+.footer i, .footer p{
+    color: white;
+    margin-right: 4rem;
+    font-size: 2rem;
+}
+.footer p{
+    position: absolute;
+    right: 0;
 }
