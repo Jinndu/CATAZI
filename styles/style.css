@@ -25,10 +25,11 @@ nav ul{
     display: flex;
     list-style: none; 
     margin: auto;
+    transition: .2s ease-in-out;
 }
 .navbar a{
     text-decoration: none;
-    margin-left: 2.5rem;
+    margin-left: 4rem;
     color: black;
     font-weight: 700;
     font-size: 20px;
@@ -40,6 +41,12 @@ a i{
     color: #9ADE7B;
     font-size: 16px;
     margin-right: 5px;
+}
+.sticky ul{
+    transform: scale(0);
+}
+.home a{
+    color: #9ADE7B;
 }
 .menu{
     position: absolute;
@@ -60,6 +67,8 @@ a i{
     font-weight: 700;
     z-index: 1;
     font-size: 20px;
+    transform: scale(1);
+    transition: .5s ease-in-out;
 }
 
 .carousel-img{
@@ -203,6 +212,7 @@ form{
     outline: none;
     border: none;
     border-radius: 8px;
+    position: relative;
 }
 .form select, select option{
     cursor: pointer;
@@ -254,6 +264,33 @@ form{
     opacity: 1;
     transform: translateX(150px);
 }
+.user-email{
+    overflow: hidden;
+}
+.errorMessage{
+    position: absolute;
+    padding: 1rem;
+    white-space: nowrap;
+    bottom:63%;
+    right: 10%;
+    color: red;
+    transition: .5s ease-in-out;
+    opacity: 0;
+}
+.errorMessage[error]::after{
+    content: attr(error);
+    position: absolute;
+    top: -2.3rem;
+    right: -2rem;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    font-size: .6rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    box-shadow: 3px -2px 12px #ff1616;
+}
 .footer{
     background-color: black;
     padding: 1rem;
@@ -267,6 +304,10 @@ form{
     color: white;
     margin-right: 4rem;
     font-size: 2rem;
+    transition: .3s ease-in-out;
+}
+.footer i:hover{
+    transform: scale(1.5);
 }
 .footer p{
     position: absolute;
