@@ -21,7 +21,7 @@
     <nav class="navbar">
         <div class="logo"><img src="images/catazi_logo.png" alt=""></div>
         <ul>
-            <li><a href="" class="home"><i class="fa-solid fa-house"></i> HOME</a></li>
+            <li class="home"><a href=""><i class="fa-solid fa-house"></i> HOME</a></li>
             <li><a href="services.html"><i class="fa-solid fa-gas-pump"></i> SERVICES</a></li>
             <li><a href=""><i class="fa-solid fa-microscope"></i> ABOUT</a></li>
             <li><a href="#contact-us"><i class="fa-solid fa-phone"></i> CONTACT US</a></li>
@@ -104,14 +104,15 @@
           <label for="form">
             REQUEST FOR OUR SERVICES ??
           </label>
-          <form action="mailto:agu.bliss05@gmail.com" >
+          <form action="mailto:agu.bliss05@gmail.com" method="GET" onsubmit="reset();" >
             <div class="user-email">
-              <input type="text" class="name" placeholder="Full Name">
-              <input type="email" class="email" placeholder="Email-address">
+              <input type="text" id="name" class="name" placeholder="Full Name" required >
+              <input type="email" id="email" class="email" placeholder="Email-address"  required >
+              <span class="errorMessage" error="INPUT CORRECT EMAIL"><i class="fa-solid fa-square-xmark"></i></span>
             </div>
              <div class="num-select">
-              <input type="number" class="phone-number" placeholder="Phone Number">
-              <select name="" id="">
+              <input type="number" class="phone-number" id="num" placeholder="Phone Number" required>
+              <select name="" id="option">
                 <option selected value="">Gas Delivery</option>
                 <option value="">Retail</option>
                 <option value="">Cylinder Calibration</option>
@@ -120,7 +121,7 @@
               </select>
              </div>
              <div>
-              <textarea name="" id="" cols="30" rows="10" placeholder="your text . . ."></textarea>
+              <textarea name="" id="message" cols="30" rows="10" placeholder="your text . . ."></textarea>
              </div>
              <button type="submit" note="..This will be sent directly to our mail">SEND</button>
              
