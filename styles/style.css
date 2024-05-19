@@ -6,7 +6,9 @@ html, body{
     width: 100%;
     padding: 0;
 }
-
+body{
+    overflow-x: hidden;
+}
 .open-sans{
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -313,3 +315,66 @@ form{
     position: absolute;
     right: 0;
 }
+
+@media only screen and (max-width: 995px) {
+    .navbar a{
+        display: none;
+    }
+    .attributes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .at{
+        margin-bottom: 2rem;
+        width: 50%;
+        flex-basis: 50%;
+    }
+    .at3{
+        display: none;
+    }
+    .why1 p{
+        font-size: 14px;
+    }
+    .form-box{
+        margin-left: 0;
+    }
+    .form{
+        width: 40rem;
+    }
+    .form label{
+        text-align: left;
+    }
+    .form input, .form select{
+        width: 14rem;
+    }
+    .form textarea{
+        position: relative;
+        right: 15px;
+    }
+    .menu{
+        display: flex;
+    }
+    
+  }
+  @media only screen and (max-width:818px ){
+    .why-us{
+        flex-direction: column;
+        height: 1100px;
+    }
+    .why1{
+        flex-basis: 20%;
+    }
+    .why1 p{
+        font-size: 1.3rem;
+    }
+    .form-box{
+        padding-top: 0;
+    }
+    .form{
+        left: -120px;
+    }
+    .contact-p{
+        display: none;
+    }
+  }
