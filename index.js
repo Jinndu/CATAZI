@@ -12,8 +12,11 @@ email.addEventListener("input", function(e){
     const isValid = regexPattern.test(e.target.value);
     if(isValid){
         emailError.style.opacity = "0"
+        email.style.border = "none";
     }else{
         emailError.style.opacity = "1"
+        e.preventDefault;
+        email.style.border="3px solid red";
     }
 })
 
