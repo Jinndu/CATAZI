@@ -371,6 +371,7 @@ form{
     }
     .form-box{
         padding-top: 0;
+        backdrop-filter: blur(10px);
     }
     .form{
         left: -120px;
@@ -386,5 +387,8 @@ form{
     .form textarea{
         width: 60%;
         height: 5rem;
+    }
+    .form label{
+        font-size: 20px;
     }
   }
