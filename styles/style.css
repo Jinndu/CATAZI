@@ -379,3 +379,12 @@ form{
         display: none;
     }
   }
+  @media only screen and (max-width: 510px){
+    .form input, .form select{
+        width: 12rem;
+    }
+    .form textarea{
+        width: 60%;
+        height: 5rem;
+    }
+  }
