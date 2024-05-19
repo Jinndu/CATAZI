@@ -53,6 +53,7 @@ a i{
 .menu{
     position: absolute;
     right: 1.5rem;
+    display: none;
 }
 .menu:hover{
     cursor: pointer;
