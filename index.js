@@ -22,5 +22,23 @@ email.addEventListener("input", function(e){
 
 window.addEventListener("scroll",function(){
     var nav = document.querySelector(".navbar");
-    nav.classList.toggle("sticky",window.scrollY > 0);
+    if (window.innerWidth > 981) {
+        nav.classList.toggle("sticky",window.scrollY > 0);
+    } else {
+        nav.classList.remove("sticky");
+    }
+})
+const close = document.querySelector(".close");
+
+const menuBar = document.querySelector(".menu");
+
+const mobileMenu = document.querySelector(".mobile-menu ul");
+
+menuBar.addEventListener("click", function(){
+    mobileMenu.style.transform = "scale(1)";
+    document.querySelector("*").style.overflowY = "hidden";
+})
+close.addEventListener("click", function(){
+    mobileMenu.style.transform = "scale(0)";
+    document.querySelector("*").style.overflowY = "scroll";
 })
