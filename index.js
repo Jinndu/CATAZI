@@ -36,9 +36,9 @@ const mobileMenu = document.querySelector(".mobile-menu ul");
 
 menuBar.addEventListener("click", function(){
     mobileMenu.style.transform = "scale(1)";
-    document.querySelector("*").style.overflowY = "hidden";
+    document.querySelector("html").style.overflowY = "hidden";
 })
 close.addEventListener("click", function(){
     mobileMenu.style.transform = "scale(0)";
-    document.querySelector("*").style.overflowY = "scroll";
+    document.querySelector("html").style.overflowY = "scroll";
 })
