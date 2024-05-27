@@ -320,7 +320,7 @@ form{
     right: 0;
 }
 
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 995px) {    
     .large-screen a{
         display: none;
     }
@@ -332,7 +332,8 @@ form{
         padding: auto;
     }
     .mobile-menu ul{
-        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
         flex-direction: column;
         position: fixed;
         z-index: 1000;
@@ -341,6 +342,8 @@ form{
         height: 100vh;
         width: 100%;
         justify-content: center;
+        transform: scale(0);
+        transition: .2s ease-in-out;
     }
     .mobile-menu a, .mobile-menu i{
         color: #262627;
@@ -390,7 +393,7 @@ form{
         display: flex;
     }
     .footer i{
-        font-size: 14px;
+        font-size: 30px;
     }
 
     
