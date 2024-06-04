@@ -26,6 +26,7 @@ html, body{
 .logo{
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .logo span{
   font-family: "Bevan", serif;
@@ -34,8 +35,8 @@ html, body{
 }
 .navigations{
   position: absolute;
-  right: 4rem;
-  top: 2rem;
+  right: 2rem;
+  top: 1/5rem;
 }
 .navigations ul{
   display: flex;
@@ -76,7 +77,7 @@ a i{
   margin-right: .5rem;
 }
 .logo img{
-  width: 8vw;
+  width: 10vw;
   clip-path: circle();
   background-position: center;
   background-repeat: no-repeat;
