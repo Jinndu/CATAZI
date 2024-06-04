@@ -1,3 +1,6 @@
+/* *{
+    overflow-x: inherit;
+} */
 html, body{
     margin: 0;
     flex-direction: column;
@@ -17,65 +20,81 @@ body{
   font-variation-settings:
     "wdth" 100;
 }
-.navbar{
+ .navbar{
     display: flex;
-    margin-top: 3rem;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    position: relative;
 }
-nav ul{
+.logo img{
+    width: 10vw;
+    clip-path: circle();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo span{
+    font-family: "Bevan", serif;
+}
+.navbar ul{
     display: flex;
-    list-style: none; 
-    margin: auto;
+    gap: 2rem;
+    list-style: none;
+    text-align: center;
+    padding-inline-end: 1rem;
+}
+.navigations li{
     transition: .2s ease-in-out;
 }
-.navbar a{
+.navigations a{
     text-decoration: none;
-    margin-left: 4rem;
-    color: black;
-    font-weight: 700;
+    color: rgb(3, 3, 14);
+    font-size: 16px;
+    transition:  .5s ease-in-out ;
+    text-decoration-color: #9ADE7B;
+
+}
+.navigations a:hover{
+    color: #9ADE7B;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-thickness: .1rem;
+}
+.home a{
+    color: #9ADE7B;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-thickness: .1rem;
+}
+.home a:hover{
     font-size: 20px;
 }
-.navbar a:hover{
-    color: #9ADE7B;
-}
+.home a:hover .navigations a{
+    text-decoration: none;
+} 
+
 a i{
     color: #9ADE7B;
-    font-size: 16px;
-    margin-right: 5px;
+    margin-right: .5rem;
 }
 .sticky ul{
     transform: scale(0);
 }
-.home a{
-    color: #9ADE7B;
-}
 .menu{
     position: absolute;
     right: 1.5rem;
+    top: 2.7rem;
     display: none;
 }
 .menu:hover{
-    cursor: pointer;
-}
-.logo{
-    position: absolute;
-    padding: 2rem;
-    background-color: #9ADE7B;
-    top: -2rem;
-    left: 1px;
-    color: white;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    font-weight: 700;
-    z-index: 1;
-    font-size: 20px;
-    transform: scale(1);
-    transition: .5s ease-in-out;
+    cursor: pointer; 
 }
 .mobile-menu ul, .mobile-menu{
     display: none;
     margin-block: 0px;
+    padding: 0;
 }
 .carousel-img{
     width: 98%;
@@ -158,7 +177,6 @@ a i{
     margin-top: 2rem;
     color: rgb(37, 37, 37);
     font-weight: 800;
-    letter-spacing: px;
     font-size: 2rem;
 }
 .fa-forward{
@@ -265,6 +283,7 @@ form{
     font-size: 12px;
     white-space: nowrap;
     transition: 1s;
+    z-index: 1000;
 }
 .form button:hover::after{
     opacity: 1;
@@ -308,7 +327,7 @@ form{
 
 .footer i, .footer p{
     color: white;
-    margin-right: 4rem;
+    margin-right: 3rem;
     font-size: 2rem;
     transition: .3s ease-in-out;
 }
@@ -320,7 +339,7 @@ form{
     right: 0;
 }
 
-@media only screen and (max-width: 995px) {    
+@media only screen and (max-width: 1040px) {    
     .large-screen a{
         display: none;
     }
@@ -350,6 +369,7 @@ form{
         font-size: 1.5rem;
         margin-bottom: 2rem;
         text-align: center;
+        text-decoration: none;
     }
     .close{
         position: absolute;
@@ -371,10 +391,11 @@ form{
         display: none;
     }
     .why1 p{
-        font-size: 14px;
+        font-size: 12px;
     }
     .form-box{
         margin-left: 0;
+        overflow-y: hidden;
     }
     .form{
         width: 40rem;
@@ -398,7 +419,14 @@ form{
 
     
   }
-  @media only screen and (max-width:818px ){
+  @media only screen and (max-width:900px ){
+    .logo img{
+        width: 15vh;
+    }
+    .motion{
+        font-size: 12px;
+        padding: 1rem .5rem;
+    }
     .why-us{
         flex-direction: column;
         height: 1100px;
@@ -420,7 +448,7 @@ form{
         display: none;
     }
   }
-  @media only screen and (max-width: 510px){
+  @media only screen and (max-width: 1040px){
     *{
         margin: 0;
     }
@@ -471,5 +499,10 @@ form{
     }
     .errorMessage{
         display: none;
+    }
+  }
+  @media only screen and (max-width: 375px){
+    .form-box{
+        padding-left: .5rem;
     }
   }
