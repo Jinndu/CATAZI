@@ -41,6 +41,7 @@ html, body{
 .navigations ul{
   display: flex;
   gap: 2rem;
+  list-style: none;
 }
 .navigations li:nth-child(2) a{
   color: #9ADE7B;
