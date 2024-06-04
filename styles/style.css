@@ -25,7 +25,7 @@ body{
     position: relative;
 }
 .logo img{
-    width: 10vw;
+    width: 8vw;
     clip-path: circle();
     background-position: center;
     background-repeat: no-repeat;
