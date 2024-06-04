@@ -25,11 +25,12 @@ body{
     position: relative;
 }
 .logo img{
-    width: 8vw;
+    width: 10vw;
     clip-path: circle();
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-inline-end: 1rem;
 }
 .logo span{
     font-family: "Bevan", serif;
@@ -39,7 +40,7 @@ body{
     gap: 2rem;
     list-style: none;
     text-align: center;
-    padding-inline-end: 1rem;
+    padding-inline-end: 2rem;
 }
 .navigations li{
     transition: .2s ease-in-out;
