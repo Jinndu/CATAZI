@@ -20,14 +20,16 @@ email.addEventListener("input", function(e){
     }
 })
 
-window.addEventListener("scroll",function(){
-    var nav = document.querySelector(".navbar");
-    if (window.innerWidth > 981) {
-        nav.classList.toggle("sticky",window.scrollY > 0);
-    } else {
-        nav.classList.remove("sticky");
-    }
-})
+// window.addEventListener("scroll",function(){
+//     var nav = document.querySelector(".navbar");
+//     if (window.innerWidth > 981) {
+//         nav.classList.toggle("sticky",window.scrollY > 0);
+//     } else {
+//         nav.classList.remove("sticky");
+//     }
+// })
+
+
 const close = document.querySelector(".close");
 
 const menuBar = document.querySelector(".menu");
@@ -42,3 +44,8 @@ close.addEventListener("click", function(){
     mobileMenu.style.transform = "scale(0)";
     document.querySelector("html").style.overflowY = "scroll";
 })
+
+function reverse(e){
+    mobileMenu.style.transform = "scale(0)"
+    e.preventdefault();
+}
