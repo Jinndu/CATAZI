@@ -78,7 +78,7 @@ html, body{
   margin-right: .5rem;
 }
 .logo img{
-  width: 10vw;
+  width: 8vw;
   clip-path: circle();
   background-position: center;
   background-repeat: no-repeat;
